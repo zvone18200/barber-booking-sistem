@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gold: #C9A84C;
+  --gold-dim: #C9A84C22;
+  --gold-border: #C9A84C44;
+  --bg-main: #111110;
+  --bg-card: #1a1a18;
+  --bg-card2: #222220;
+  --text-primary: #e8e6e0;
+  --text-muted: #888780;
+  --text-dim: #5F5E5A;
+  --green: #5DCAA5;
+  --green-dim: #1D9E7522;
+  --red: #F09595;
+  --red-dim: #E24B4A22;
+  --amber: #EF9F27;
+  --amber-dim: #BA751722;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  font-family: var(--font-sans, system-ui, sans-serif);
+}
+
+input, select, textarea {
+  background: var(--bg-card2);
+  border: 0.5px solid var(--gold-border);
+  color: var(--text-primary);
+  border-radius: 8px;
+  padding: 10px 14px;
+  width: 100%;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--gold);
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--text-dim);
+}
+
+select option {
+  background: var(--bg-card);
+}
+
+button {
+  cursor: pointer;
+  font-size: 13px;
+  border-radius: 8px;
+  transition: opacity 0.2s;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+html, body {
+  background-color: #111110 !important;
+}
